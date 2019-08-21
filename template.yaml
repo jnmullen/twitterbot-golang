@@ -1,0 +1,65 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Simple function to detect if an animal is within a picture and reply to the tweet with that animal
+  sam-app
+
+  Sample SAM Template for sam-app
+  
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 10
+
+Parameters:
+
+    TWITTER_CONSUMER_KEY:
+        Description: 'Required. The Twitter Consumer Key'
+        Type: 'AWS::SSM::Parameter::Value<String>'
+        Default: 'TwitterConsumerKey' 
+
+    TWITTER_CONSUMER_SECRET:
+        Description: 'Required. The Twitter Consumer Secret'
+        Type: 'AWS::SSM::Parameter::Value<String>'
+        Default: 'TwitterConsumerSecret' 
+    
+    TWITTER_ACCESS_TOKEN_KEY:
+        Description: 'Required. The Twitter Access Token Key'
+        Type: 'AWS::SSM::Parameter::Value<String>'
+        Default: 'TwitterAccessTokenKey'
+
+    TWITTER_ACCESS_TOKEN_SECRET: 
+        Description: 'Required. The Twitter Access Token Secret'
+        Type: 'AWS::SSM::Parameter::Value<String>'
+        Default: 'TwitterAccessTokenSecret'
+    
+
+Resources:
+  AnimalRecogGoLang:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      Handler: animalbot
+      Runtime: go1.x
+      Environment:
+            TWITTER_CONSUMER_KEY: !Ref TWITTER_CONSUMER_KEY
+            TWITTER_CONSUMER_SECRET: !Ref TWITTER_CONSUMER_SECRET
+            TWITTER_ACCESS_TOKEN_KEY: !Ref TWITTER_ACCESS_TOKEN_KEY
+            TWITTER_ACCESS_TOKEN_SECRET: !Ref TWITTER_ACCESS_TOKEN_SECRET
+      Policies:
+        - Version: '2012-10-17'
+          Statement:
+            - Effect: Allow
+              Action:
+                - 'rekognition:DetectLabels'
+              Resource: '*'
+      
+
+Outputs:
+  # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
+  # Find out more about other implicit resources you can reference within SAM
+  # https://github.com/awslabs/serverless-application-model/blob/master/docs/internals/generated_resources.rst#api
+  AnimalRecogGoLang:
+    Description: "Function which recognises animals in images posted to a twitter bot"
+    Value: !GetAtt AnimalRecogGoLang.Arn
+  AnimalRecogGoLangIamRole:
+    Description: "Implicit IAM Role created for Animal Recog Go Lang function"
+    Value: !GetAtt HelAnimalRecogGoLangFunctionRole.Arn

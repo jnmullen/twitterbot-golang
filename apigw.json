@@ -1,0 +1,123 @@
+{
+  "body": "{\"for_user_id\":\"1062458819794649088\",\"tweet_create_events\":[{\"created_at\":\"Wed May 08 20:11:27 +0000 2019\",\"id\":1126218073604796400,\"id_str\":\"1126218073604796417\",\"text\":\"@whatanimalami what animal do you see? https:\/\/t.co\/jfzBZULNMI\",\"display_text_range\":[0,38],\"source\":\"<a href=\\\"http:\/\/twitter.com\\\" rel=\\\"nofollow\\\">Twitter Web Client<\/a>\",\"truncated\":false,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":1062458819794649100,\"in_reply_to_user_id_str\":\"1062458819794649088\",\"in_reply_to_screen_name\":\"whatanimalami\",\"user\":{\"id\":20397392,\"id_str\":\"20397392\",\"name\":\"James Mullen\",\"screen_name\":\"jamesnmullen\",\"location\":\"Manchester\",\"url\":\"https:\/\/blog.james-mullen.me.uk\/\",\"description\":null,\"translator_type\":\"none\",\"protected\":false,\"verified\":false,\"followers_count\":94,\"friends_count\":236,\"listed_count\":0,\"favourites_count\":747,\"statuses_count\":573,\"created_at\":\"Sun Feb 08 22:17:10 +0000 2009\",\"utc_offset\":null,\"time_zone\":null,\"geo_enabled\":false,\"lang\":\"en\",\"contributors_enabled\":false,\"is_translator\":false,\"profile_background_color\":\"C0DEED\",\"profile_background_image_url\":\"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png\",\"profile_background_image_url_https\":\"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png\",\"profile_background_tile\":false,\"profile_link_color\":\"1DA1F2\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"profile_image_url\":\"http:\/\/pbs.twimg.com\/profile_images\/998941447943405568\/4to703iG_normal.jpg\",\"profile_image_url_https\":\"https:\/\/pbs.twimg.com\/profile_images\/998941447943405568\/4to703iG_normal.jpg\",\"profile_banner_url\":\"https:\/\/pbs.twimg.com\/profile_banners\/20397392\/1542105926\",\"default_profile\":true,\"default_profile_image\":false,\"following\":null,\"follow_request_sent\":null,\"notifications\":null},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"is_quote_status\":false,\"quote_count\":0,\"reply_count\":0,\"retweet_count\":0,\"favorite_count\":0,\"entities\":{\"hashtags\":[],\"urls\":[],\"user_mentions\":[{\"screen_name\":\"whatanimalami\",\"name\":\"What Animal Am I Bot\",\"id\":1062458819794649100,\"id_str\":\"1062458819794649088\",\"indices\":[0,14]}],\"symbols\":[],\"media\":[{\"id\":1126218015471734800,\"id_str\":\"1126218015471734784\",\"indices\":[39,62],\"media_url\":\"http:\/\/pbs.twimg.com\/media\/D6EhUW_WkAAqUic.jpg\",\"media_url_https\":\"https:\/\/pbs.twimg.com\/media\/D6EhUW_WkAAqUic.jpg\",\"url\":\"https:\/\/t.co\/jfzBZULNMI\",\"display_url\":\"pic.twitter.com\/jfzBZULNMI\",\"expanded_url\":\"https:\/\/twitter.com\/jamesnmullen\/status\/1126218073604796417\/photo\/1\",\"type\":\"photo\",\"sizes\":{\"thumb\":{\"w\":150,\"h\":150,\"resize\":\"crop\"},\"medium\":{\"w\":1200,\"h\":900,\"resize\":\"fit\"},\"large\":{\"w\":1280,\"h\":960,\"resize\":\"fit\"},\"small\":{\"w\":680,\"h\":510,\"resize\":\"fit\"}}}]},\"extended_entities\":{\"media\":[{\"id\":1126218015471734800,\"id_str\":\"1126218015471734784\",\"indices\":[39,62],\"media_url\":\"http:\/\/pbs.twimg.com\/media\/D6EhUW_WkAAqUic.jpg\",\"media_url_https\":\"https:\/\/pbs.twimg.com\/media\/D6EhUW_WkAAqUic.jpg\",\"url\":\"https:\/\/t.co\/jfzBZULNMI\",\"display_url\":\"pic.twitter.com\/jfzBZULNMI\",\"expanded_url\":\"https:\/\/twitter.com\/jamesnmullen\/status\/1126218073604796417\/photo\/1\",\"type\":\"photo\",\"sizes\":{\"thumb\":{\"w\":150,\"h\":150,\"resize\":\"crop\"},\"medium\":{\"w\":1200,\"h\":900,\"resize\":\"fit\"},\"large\":{\"w\":1280,\"h\":960,\"resize\":\"fit\"},\"small\":{\"w\":680,\"h\":510,\"resize\":\"fit\"}}}]},\"favorited\":false,\"retweeted\":false,\"possibly_sensitive\":false,\"filter_level\":\"low\",\"lang\":\"en\",\"timestamp_ms\":\"1557346287524\"}]}",
+  "resource": "/{proxy+}",
+  "path": "/path/to/resource",
+  "httpMethod": "POST",
+  "isBase64Encoded": false,
+  "queryStringParameters": {
+    "foo": "bar"
+  },
+  "multiValueQueryStringParameters": {
+    "foo": [
+      "bar"
+    ]
+  },
+  "pathParameters": {
+    "proxy": "/path/to/resource"
+  },
+  "stageVariables": {
+    "baz": "qux"
+  },
+  "headers": {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate, sdch",
+    "Accept-Language": "en-US,en;q=0.8",
+    "Cache-Control": "max-age=0",
+    "CloudFront-Forwarded-Proto": "https",
+    "CloudFront-Is-Desktop-Viewer": "true",
+    "CloudFront-Is-Mobile-Viewer": "false",
+    "CloudFront-Is-SmartTV-Viewer": "false",
+    "CloudFront-Is-Tablet-Viewer": "false",
+    "CloudFront-Viewer-Country": "US",
+    "Host": "1234567890.execute-api.us-east-1.amazonaws.com",
+    "Upgrade-Insecure-Requests": "1",
+    "User-Agent": "Custom User Agent String",
+    "Via": "1.1 08f323deadbeefa7af34d5feb414ce27.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Id": "cDehVQoZnx43VYQb9j2-nvCh-9z396Uhbp027Y2JvkCPNLmGJHqlaA==",
+    "X-Forwarded-For": "127.0.0.1, 127.0.0.2",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https"
+  },
+  "multiValueHeaders": {
+    "Accept": [
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, sdch"
+    ],
+    "Accept-Language": [
+      "en-US,en;q=0.8"
+    ],
+    "Cache-Control": [
+      "max-age=0"
+    ],
+    "CloudFront-Forwarded-Proto": [
+      "https"
+    ],
+    "CloudFront-Is-Desktop-Viewer": [
+      "true"
+    ],
+    "CloudFront-Is-Mobile-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-SmartTV-Viewer": [
+      "false"
+    ],
+    "CloudFront-Is-Tablet-Viewer": [
+      "false"
+    ],
+    "CloudFront-Viewer-Country": [
+      "US"
+    ],
+    "Host": [
+      "0123456789.execute-api.us-east-1.amazonaws.com"
+    ],
+    "Upgrade-Insecure-Requests": [
+      "1"
+    ],
+    "User-Agent": [
+      "Custom User Agent String"
+    ],
+    "Via": [
+      "1.1 08f323deadbeefa7af34d5feb414ce27.cloudfront.net (CloudFront)"
+    ],
+    "X-Amz-Cf-Id": [
+      "cDehVQoZnx43VYQb9j2-nvCh-9z396Uhbp027Y2JvkCPNLmGJHqlaA=="
+    ],
+    "X-Forwarded-For": [
+      "127.0.0.1, 127.0.0.2"
+    ],
+    "X-Forwarded-Port": [
+      "443"
+    ],
+    "X-Forwarded-Proto": [
+      "https"
+    ]
+  },
+  "requestContext": {
+    "accountId": "123456789012",
+    "resourceId": "123456",
+    "stage": "prod",
+    "requestId": "c6af9ac6-7b61-11e6-9a41-93e8deadbeef",
+    "requestTime": "09/Apr/2015:12:34:56 +0000",
+    "requestTimeEpoch": 1428582896000,
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "accessKey": null,
+      "sourceIp": "127.0.0.1",
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "Custom User Agent String",
+      "user": null
+    },
+    "path": "/prod/path/to/resource",
+    "resourcePath": "/{proxy+}",
+    "httpMethod": "POST",
+    "apiId": "1234567890",
+    "protocol": "HTTP/1.1"
+  }
+}
